@@ -5,19 +5,75 @@
  <link rel="apple-touch-icon" href="img/eye.png" type="image/x-icon"/>
 <head>
      <style>
-.button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+body {
+  font-size: 12px;
+  background: #fff !important;
+  border-style: none;
+  font-family: helvetica, arial, sans-serif;
 }
-.playsound {
+.sound {
+  border-style: outset;
+  width: 100px;
+  height: 150px;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+}
+#instants_container {
+  margin: 30px auto 0;
+  text-align: center;
+  border-style: none;
+}
+.instant {
+  position: relative;
+  vertical-align: top;
+  width: 94px;
+  border-style: none;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+.small-button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  border-style: none;
+  position: absolute;
+  background: url(https://www.myinstants.com/media/images/transparent_button_small_normal.png.pagespeed.ce.Q_pq0WnHY3.png) no-repeat;
+}
+.small-button:active {
+  background: url(https://www.myinstants.com/media/images/transparent_button_small_pressed.png.pagespeed.ce.ApeRPoBIvd.png) no-repeat;
+}
+.small-button-background {
+  width: 86px;
+  height: 84px;
+  margin-top: 3px;
+  margin-left: 6px;
+  position: absolute;
+}
+.small-button-shadow {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(https://www.myinstants.com/media/images/transparent_button_small_shadow.png.pagespeed.ce.7foh4e-miG.png) no-repeat;
+}
+.circle {
   border-radius: 50%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.flex-container > div {
+  padding: 5px;
 }
   </style>
   <title>Soundboard | 3kh0</title>
@@ -40,19 +96,23 @@
   <body>
     <h1>Soundboard</h1>
     <h2>Just play these without context.</h2>
-
 ---------------------------------------------------------<br>
-   <iframe width="110" height="200" src="https://www.myinstants.com/instant/fart-button/embed/" frameborder="0" scrolling="no"></iframe>
-   <br>
-   <br>
-   <button class="button playsound">Fart</button>
-   <br>
-   <br>
+   
+<div class="flex-container">
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#339900;"></div>
+    <audio id="fart" src="sounds/fart.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('fart').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name">Fart<br>
+       <button onclick="window.location.href='sounds/fart.mp3'">Download</button></p>
+  </div>
+ </div>
  
-    <div class="circle small-button-background" style="background-color:#339900;"></div>
-    <div class="small-button" onmousedown="play('sounds/fart.mp3')"></div>
-    <div class="small-button-shadow"></div>
-     <a href="/instant/fart-button/" class="instant-link">Fart Button</a>
+ 
+</div>
 
  </body>
 </html>
