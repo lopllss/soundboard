@@ -14,7 +14,7 @@ body {
 .sound {
   border-style: outset;
   width: 100px;
-  height: 150px;
+  height: 170px;
 }
 .name {
   text-align: center;
@@ -204,6 +204,17 @@ body {
       <div class="small-button-shadow"></div>
       <p class="name">DUN DUN!<br>
        <button onclick="window.location.href='sounds/DUN_DUN.mp3'">Download</button></p>
+  </div>
+ </div>
+ 
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#1cff6b;"></div>
+    <audio id="what-the-dog-doin" src="sounds/what-the-dog-doin.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('what-the-dog-doin').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name">What the dog doing?<br>
+       <button onclick="window.location.href='sounds/what-the-dog-doin.mp3'">Download</button></p>
   </div>
  </div>
  
