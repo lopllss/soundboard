@@ -81,9 +81,9 @@ body {
    <meta content="https://3kh0.github.io/soundboard" property="og:url" />
    <meta content="img/mlg.png" property="og:image" />
    <meta content="#00FF00" data-react-helmet="true" name="theme-color" />
-   <meta name="title" content="3kh0.github.io">
-   <meta name="description" content="Soundboard">
-   <meta name="keywords" content="games, ad blocker, trolls, unblocked games, web games, online games, fun, tags">
+   <meta name="title" content="Online Soundboard">
+   <meta name="description" content="A collection of sounds to play out of context. Perfect for school! Just play it when your teacher is talking and I bet they will love it!">
+   <meta name="keywords" content="games, ad blocker, trolls, unblocked games, web games, online games, fun, tags, soundboard, sound, funny">
    <meta name="robots" content="index, follow">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="language" content="English">
@@ -108,8 +108,43 @@ body {
   </div>
  </div>
  
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#f2c305;"></div>
+    <audio id="bruh" src="sounds/bruh.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('bruh').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name">BRUH<br>
+       <button onclick="window.location.href='sounds/bruh.mp3'">Download</button></p>
+  </div>
+ </div>
  
-</div>
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#05b0fa;"></div>
+    <audio id="WinError" src="sounds/WinError.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('WinError').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name">Windows Error<br>
+       <button onclick="window.location.href='sounds/WinError.mp3'">Download</button></p>
+  </div>
+ </div>
+ 
+ 
+<!-- TEMPLATE TO ADD MORE SOUNDS
 
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#COLOR;"></div>
+    <audio id="SOUND_NAME" src="sounds/SOUND_NAME.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('SOUND_NAME').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name">SOUND_NAME<br>
+       <button onclick="window.location.href='sounds/SOUND_NAME.mp3'">Download</button></p>
+  </div>
+ </div>
+
+-->
+</div>
  </body>
 </html>
