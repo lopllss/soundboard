@@ -153,6 +153,7 @@ function playAll() {
   document.getElementById('gta5-wasted').play()
   document.getElementById('sloppy-fart').play()
   document.getElementById('morgan-smell').play()
+  document.getElementById('john-cena-intro').play()
 }
 function stopAll() {
   document.getElementById('fart').load()
@@ -194,6 +195,7 @@ function stopAll() {
   document.getElementById('gta5-wasted').load()
   document.getElementById('sloppy-fart').load()
   document.getElementById('morgan-smell').load()
+  document.getElementById('john-cena-intro').load()
 }
 </script>
  <div class="control">
@@ -678,6 +680,18 @@ Audio Controls
       <div class="small-button-shadow"></div>
       <p class="name"><button onclick="window.location.href='sounds/morgan-smell.mp3'">Download</button><br>
        Morgan I can smell you<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#00ff00;"></div>
+    <audio id="john-cena-intro" src="sounds/john-cena-intro.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('john-cena-intro').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/john-cena-intro.mp3'">Download</button><br>
+        John Cena intro<br>
        </p>
   </div>
  </div>
