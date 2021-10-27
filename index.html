@@ -106,6 +106,7 @@ div.control {
    
  <div class="control">
 Audio Controls 
+  <button onclick="document.getElementByClass("sound").play()">Play all</button> 
   <button onclick="document.getElementsByTagName(audio).play();">Unleash Chaos!</button> 
   <button onclick="document.getElementById(stopButton).onclick=function(){var e=document.getElementsByTagName(audio);for(i=0;i<e.length;i++)e[i].pause()};">Stop all audio</button>
 </div>
@@ -115,7 +116,7 @@ Audio Controls
  <div>
   <div class="sound">
    <div class="circle small-button-background" style="background-color:#339900;"></div>
-    <audio id="fart" src="sounds/fart.mp3" preload="auto"></audio>
+    <audio class="sound" id="fart" src="sounds/fart.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('fart').play();"></button>
       <div class="small-button-shadow"></div>
       <p class="name"><button onclick="window.location.href='sounds/fart.mp3'">Download</button><br>
