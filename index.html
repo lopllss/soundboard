@@ -115,6 +115,7 @@ div.control {
  // functions for audio control menu
 function playAll() {
   document.getElementById('fart').play()
+  document.getElementById('fart-with-reverb').load()
   document.getElementById('bruh').play()
   document.getElementById('WinError').play()
   document.getElementById('nope').play()
@@ -145,9 +146,15 @@ function playAll() {
   document.getElementById('woody-woodpecker-laugh').play()
   document.getElementById('earape-base').play()
   document.getElementById('nomnomnomnom').play()
+  document.getElementById('spongebob-dolphin').play()
+  document.getElementById('fn-default-bb').play()
+  document.getElementById('five-nights-at-freddys-full-scream').play()
+  document.getElementById('gta5-wasted').play()
+  document.getElementById('sloppy-fart').play()
 }
 function stopAll() {
   document.getElementById('fart').load()
+  document.getElementById('fart-with-reverb').load()
   document.getElementById('bruh').load()
   document.getElementById('WinError').load()
   document.getElementById('nope').load()
@@ -178,6 +185,11 @@ function stopAll() {
   document.getElementById('woody-woodpecker-laugh').load()
   document.getElementById('earape-base').load()
   document.getElementById('nomnomnomnom').load()
+  document.getElementById('spongebob-dolphin').load()
+  document.getElementById('fn-default-bb').load()
+  document.getElementById('five-nights-at-freddys-full-scream').load()
+  document.getElementById('gta5-wasted').load()
+  document.getElementById('sloppy-fart').load()
 }
 </script>
  <div class="control">
@@ -614,6 +626,30 @@ Audio Controls
       <div class="small-button-shadow"></div>
       <p class="name"><button onclick="window.location.href='sounds/five-nights-at-freddys-full-scream.mp3'">Download</button><br>
         FNAF Full jumpscare<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+    <audio id="gta5-wasted" src="sounds/gta5-wasted.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('gta5-wasted').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/gta5-wasted.mp3'">Download</button><br>
+        GTA V Wasted sound<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#70492f;"></div>
+    <audio id="sloppy-fart" src="sounds/sloppy-fart.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('sloppy-fart').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/sloppy-fart.mp3'">Download</button><br>
+        Sloppy Fart<br>
        </p>
   </div>
  </div>
