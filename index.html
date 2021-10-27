@@ -103,12 +103,44 @@ div.control {
     <h1>Online Soundboard</h1>
     <h2>Just click on the colorful buttons to play the sound.</h2>
    <h3>Click the Download button to download the sound. All sounds are copyright free!</h3>
-   
+<script>
+function playAll() {
+  document.getElementById('fart').play()
+  document.getElementById('bruh').play()
+  document.getElementById('WinError').play()
+  document.getElementById('nope').play()
+  document.getElementById('bonk').play()
+  document.getElementById('yeet').play()
+  document.getElementById('taco-bell').play()
+  document.getElementById('nut').play()
+  document.getElementById('bazinga').play()
+  document.getElementById('DUN_DUN').play()
+  document.getElementById('what-the-dog-doin').play()
+  document.getElementById('discord-notification').play()
+  document.getElementById('sheep').play()
+  document.getElementById('hello-there').play()
+  document.getElementById('oof').play()
+  document.getElementById('rick-roll').play()
+  document.getElementById('trololo').play()
+  document.getElementById('turtles').play()
+  document.getElementById('bababooey').play()
+  document.getElementById('nice').play()
+  document.getElementById('bye-have-a-great-time').play()
+  document.getElementById('inception').play()
+  document.getElementById('sicko').play()
+  document.getElementById('vine-boom').play()
+  document.getElementById('anime-wow').play()
+  document.getElementById('yummy').play()
+  document.getElementById('deez-nutz').play()
+  document.getElementById('lebron-james').play()
+  document.getElementById('woody-woodpecker-laugh').play()
+  document.getElementById('earape-base').play()
+  document.getElementById('nomnomnomnom').play()
+}
+</script>
  <div class="control">
 Audio Controls 
-  <button onclick="document.getElementByClass("sound").play()">Play all</button> 
-  <button onclick="document.getElementsByTagName(audio).play();">Unleash Chaos!</button> 
-  <button onclick="document.getElementById(stopButton).onclick=function(){var e=document.getElementsByTagName(audio);for(i=0;i<e.length;i++)e[i].pause()};">Stop all audio</button>
+  <button onclick="playAll()">Play</button>
 </div>
    
 <div class="flex-container">
