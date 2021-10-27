@@ -127,6 +127,7 @@ function playAll() {
   document.getElementById('DUN_DUN').play()
   document.getElementById('what-the-dog-doin').play()
   document.getElementById('discord-notification').play()
+  document.getElementById('android-notif').play()
   document.getElementById('sheep').play()
   document.getElementById('hello-there').play()
   document.getElementById('oof').play()
@@ -167,6 +168,7 @@ function stopAll() {
   document.getElementById('DUN_DUN').load()
   document.getElementById('what-the-dog-doin').load()
   document.getElementById('discord-notification').load()
+  document.getElementById('android-notif').load()
   document.getElementById('sheep').load()
   document.getElementById('hello-there').load()
   document.getElementById('oof').load()
@@ -355,7 +357,19 @@ Audio Controls
        </p>
   </div>
  </div>
- 
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#a4c639;"></div>
+    <audio id="android-notif" src="sounds/android-notif.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('android-notif').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/android-notif.mp3'">Download</button><br>
+        Android notification<br>
+       </p>
+  </div>
+ </div>
+
  <div>
   <div class="sound">
    <div class="circle small-button-background" style="background-color:#ffffff;"></div>
