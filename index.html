@@ -16,6 +16,9 @@ body {
   width: 100px;
   height: 170px;
 }
+.download {
+  cursor: pointer
+}
 .name {
   text-align: center;
   font-size: 15px;
@@ -47,9 +50,11 @@ body {
   border-style: none;
   position: absolute;
   background: url(img/button.png) no-repeat;
+  cursor: pointer
 }
 .small-button:active {
   background: url(img/button-pressed.png) no-repeat;
+  cursor: progress
 }
 .small-button-background {
   width: 86px;
@@ -82,6 +87,9 @@ div.control {
   padding: 3px;
   border: 3px solid #000;
   background: #ffffff;
+}
+.woah {
+  cursor: pointer
 }
   </style>
   <title>Soundboard | 3kh0</title>
@@ -173,8 +181,8 @@ function stopAll() {
 </script>
  <div class="control">
 Audio Controls 
-  <button onclick="playAll()">Provoke Chaos</button> 
-  <button onclick="stopAll()">Stop Everything</button>
+  <button class="woah" onclick="playAll()">Provoke Chaos</button> 
+  <button class="woah" onclick="stopAll()">Stop Everything</button>
 </div>
    
 <div class="flex-container">
@@ -185,7 +193,7 @@ Audio Controls
     <audio class="sound" id="fart" src="sounds/fart.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('fart').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/fart.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/fart.mp3'">Download</button><br>
        Fart</p>
   </div>
  </div>
@@ -196,7 +204,7 @@ Audio Controls
     <audio id="bruh" src="sounds/bruh.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('bruh').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/bruh.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/bruh.mp3'">Download</button><br>
       BRUH!</p>
   </div>
  </div>
@@ -207,7 +215,7 @@ Audio Controls
     <audio id="WinError" src="sounds/WinError.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('WinError').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/WinError.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/WinError.mp3'">Download</button><br>
        Windows XP Error<br>
        </p>
   </div>
@@ -219,7 +227,7 @@ Audio Controls
     <audio id="nope" src="sounds/nope.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('nope').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/nope.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/nope.mp3'">Download</button><br>
        Nope!<br>
        </p>
   </div>
@@ -231,7 +239,7 @@ Audio Controls
     <audio id="bonk" src="sounds/bonk.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('bonk').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/bonk.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/bonk.mp3'">Download</button><br>
        Bonk!<br>
        </p>
   </div>
@@ -243,7 +251,7 @@ Audio Controls
     <audio id="yeet" src="sounds/yeet.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('yeet').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/yeet.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/yeet.mp3'">Download</button><br>
        Yeet!<br>
        </p>
   </div>
@@ -255,7 +263,7 @@ Audio Controls
     <audio id="taco-bell" src="sounds/taco-bell.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('taco-bell').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/taco-bell.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/taco-bell.mp3'">Download</button><br>
        Taco Bell DONG!<br>
        </p>
   </div>
@@ -267,7 +275,7 @@ Audio Controls
     <audio id="nut" src="sounds/nut.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('nut').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/nut.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/nut.mp3'">Download</button><br>
        Nut<br>
        </p>
   </div>
@@ -279,7 +287,7 @@ Audio Controls
     <audio id="bazinga" src="sounds/bazinga.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('bazinga').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/bazinga.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/bazinga.mp3'">Download</button><br>
        Bazinga!<br>
        </p>
   </div>
@@ -291,7 +299,7 @@ Audio Controls
     <audio id="DUN_DUN" src="sounds/DUN_DUN.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('DUN_DUN').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/DUN_DUN.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/DUN_DUN.mp3'">Download</button><br>
        Law and order DUN DUN!<br>
        </p>
   </div>
@@ -303,7 +311,7 @@ Audio Controls
     <audio id="what-the-dog-doin" src="sounds/what-the-dog-doin.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('what-the-dog-doin').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/what-the-dog-doin.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/what-the-dog-doin.mp3'">Download</button><br>
        What the dog doing?<br>
        </p>
   </div>
@@ -315,7 +323,7 @@ Audio Controls
     <audio id="discord-notification" src="sounds/discord-notification.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('discord-notification').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/discord-notification.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/discord-notification.mp3'">Download</button><br>
        Discord Notification<br>
        </p>
   </div>
@@ -327,7 +335,7 @@ Audio Controls
     <audio id="sheep" src="sounds/sheep.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('sheep').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/sheep.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/sheep.mp3'">Download</button><br>
        Screaming Sheep<br>
        </p>
   </div>
@@ -339,7 +347,7 @@ Audio Controls
     <audio id="hello-there" src="sounds/hello-there.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('hello-there').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/hello-there.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/hello-there.mp3'">Download</button><br>
        Hello there<br>
        </p>
   </div>
@@ -351,7 +359,7 @@ Audio Controls
     <audio id="oof" src="sounds/oof.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('oof').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/oof.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/oof.mp3'">Download</button><br>
        Roblox Death OOF!<br>
        </p>
   </div>
@@ -363,7 +371,7 @@ Audio Controls
     <audio id="rick-roll" src="sounds/rick-roll.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('rick-roll').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/rick-roll.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/rick-roll.mp3'">Download</button><br>
        Never gonna give you up<br>
        </p>
   </div>
@@ -375,7 +383,7 @@ Audio Controls
     <audio id="trololo" src="sounds/trololo.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('trololo').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/trololo.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/trololo.mp3'">Download</button><br>
        Trololo trolololo<br>
        </p>
   </div>
@@ -387,7 +395,7 @@ Audio Controls
     <audio id="damage" src="sounds/damage.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('damage').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/damage.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/damage.mp3'">Download</button><br>
        Thats alot of damage!<br>
        </p>
   </div>
@@ -399,7 +407,7 @@ Audio Controls
     <audio id="turtles" src="sounds/turtles.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('turtles').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/turtles.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/turtles.mp3'">Download</button><br>
        I like turtles!<br>
        </p>
   </div>
@@ -411,7 +419,7 @@ Audio Controls
     <audio id="bababooey" src="sounds/bababooey.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('bababooey').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/bababooey.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/bababooey.mp3'">Download</button><br>
        Bababooey<br>
        </p>
   </div>
@@ -423,7 +431,7 @@ Audio Controls
     <audio id="nice" src="sounds/nice.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('nice').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/nice.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/nice.mp3'">Download</button><br>
        *click* Nice.<br>
        </p>
   </div>
@@ -435,7 +443,7 @@ Audio Controls
     <audio id="bye-have-a-great-time" src="sounds/bye-have-a-great-time.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('bye-have-a-great-time').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/bye-have-a-great-time.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/bye-have-a-great-time.mp3'">Download</button><br>
        Bye have a great time!<br>
        </p>
   </div>
@@ -447,7 +455,7 @@ Audio Controls
     <audio id="inception" src="sounds/inception.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('inception').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/inception.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/inception.mp3'">Download</button><br>
        Inception!<br>
        </p>
   </div>
@@ -459,7 +467,7 @@ Audio Controls
     <audio id="sicko" src="sounds/sicko.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('sicko').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/sicko.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/sicko.mp3'">Download</button><br>
        Sicko mode beginning<br>
        </p>
   </div>
@@ -471,7 +479,7 @@ Audio Controls
     <audio id="vine-boom" src="sounds/vine-boom.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('vine-boom').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/vine-boom.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/vine-boom.mp3'">Download</button><br>
        Vine scary BOOM!<br>
        </p>
   </div>
@@ -483,7 +491,7 @@ Audio Controls
     <audio id="anime-wow" src="sounds/anime-wow.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('anime-wow').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/anime-wow.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/anime-wow.mp3'">Download</button><br>
        Twitch Anime WOW<br>
        </p>
   </div>
@@ -495,7 +503,7 @@ Audio Controls
     <audio id="yummy" src="sounds/yummy.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('yummy').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/yummy.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/yummy.mp3'">Download</button><br>
        Spongebob Yummy!<br>
        </p>
   </div>
@@ -507,7 +515,7 @@ Audio Controls
     <audio id="deez-nutz" src="sounds/deez-nutz.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('deez-nutz').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/deez-nutz.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/deez-nutz.mp3'">Download</button><br>
        Deez nuts! Short version<br>
        </p>
   </div>
@@ -519,7 +527,7 @@ Audio Controls
     <audio id="lebron-james" src="sounds/lebron-james.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('lebron-james').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/lebron-james.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/lebron-james.mp3'">Download</button><br>
        DARius Vine Lebron James<br>
        </p>
   </div>
@@ -531,7 +539,7 @@ Audio Controls
     <audio id="woody-woodpecker-laugh" src="sounds/woody-woodpecker-laugh.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('woody-woodpecker-laugh').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/woody-woodpecker-laugh.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/woody-woodpecker-laugh.mp3'">Download</button><br>
        Woodpecker Laugh<br>
        </p>
   </div>
@@ -543,7 +551,7 @@ Audio Controls
     <audio id="earape-base" src="sounds/earape-base.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('earape-base').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/earape-base.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/earape-base.mp3'">Download</button><br>
        Pure basic earape<br>
        </p>
   </div>
@@ -555,7 +563,7 @@ Audio Controls
     <audio id="nomnomnomnom" src="sounds/nomnomnomnom.mp3" preload="auto"></audio>
      <button class="small-button" onclick="document.getElementById('nomnomnomnom').play();"></button>
       <div class="small-button-shadow"></div>
-      <p class="name"><button onclick="window.location.href='sounds/nomnomnomnom.mp3'">Download</button><br>
+      <p class="name"><button class="download" onclick="window.location.href='sounds/nomnomnomnom.mp3'">Download</button><br>
        Nom Nom Nom Nom<br>
        </p>
   </div>
