@@ -155,6 +155,7 @@ function playAll() {
   document.getElementById('morgan-smell').play()
   document.getElementById('john-cena-intro').play()
   document.getElementById('dababy-lets-go').play()
+  document.getElementById('gas-gas-gas').play()
 }
 function stopAll() {
   document.getElementById('fart').load()
@@ -198,6 +199,7 @@ function stopAll() {
   document.getElementById('morgan-smell').load()
   document.getElementById('john-cena-intro').load()
   document.getElementById('dababy-lets-go').load()
+  document.getElementById('gas-gas-gas').load()
 }
 </script>
  <div class="control">
@@ -710,7 +712,17 @@ Audio Controls
   </div>
  </div>
 
-
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#00ff00;"></div>
+    <audio id="gas-gas-gas" src="sounds/gas-gas-gas.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('gas-gas-gas').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/gas-gas-gas.mp3'">Download</button><br>
+        Gas Gas Gas Meme<br>
+       </p>
+  </div>
+ </div>
 
 <!-- TEMPLATE TO ADD MORE SOUNDS
 
