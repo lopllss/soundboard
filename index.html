@@ -156,6 +156,9 @@ function playAll() {
   document.getElementById('john-cena-intro').play()
   document.getElementById('dababy-lets-go').play()
   document.getElementById('gas-gas-gas').play()
+  document.getElementById('ohno-table-broken').play()
+  document.getElementById('full-table-broken').play()
+  document.getElementById('airhorn').play()
 }
 function stopAll() {
   document.getElementById('fart').load()
@@ -200,6 +203,9 @@ function stopAll() {
   document.getElementById('john-cena-intro').load()
   document.getElementById('dababy-lets-go').load()
   document.getElementById('gas-gas-gas').load()
+  document.getElementById('ohno-table-broken').load()
+  document.getElementById('full-table-broken').load()
+  document.getElementById('airhorn').load()
 }
 </script>
  <div class="control">
@@ -720,6 +726,42 @@ Audio Controls
       <div class="small-button-shadow"></div>
       <p class="name"><button onclick="window.location.href='sounds/gas-gas-gas.mp3'">Download</button><br>
         Gas Gas Gas Meme<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#0000ff;"></div>
+    <audio id="full-table-broken" src="sounds/full-table-broken.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('full-table-broken').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/full-table-broken.mp3'">Download</button><br>
+        Our table is broken Full<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#0000ff;"></div>
+    <audio id="ohno-table-broken" src="sounds/ohno-table-broken.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('ohno-table-broken').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/ohno-table-broken.mp3'">Download</button><br>
+        Broken table Short<br>
+       </p>
+  </div>
+ </div>
+
+ <div>
+  <div class="sound">
+   <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+    <audio id="airhorn" src="sounds/airhorn.mp3" preload="auto"></audio>
+     <button class="small-button" onclick="document.getElementById('airhorn').play();"></button>
+      <div class="small-button-shadow"></div>
+      <p class="name"><button onclick="window.location.href='sounds/airhorn.mp3'">Download</button><br>
+       Classic Airhorn<br>
        </p>
   </div>
  </div>
